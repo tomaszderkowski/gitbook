@@ -20,3 +20,7 @@ spec:
  nodeName: node02
 ```
 
+## Taints i Tolerations
+
+## Static Pods
+
