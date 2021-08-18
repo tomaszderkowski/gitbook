@@ -71,3 +71,19 @@ dig
 
 nslookup
 
+## Serwisy
+
+Rodzaje serwisów
+
+* ClusterIP - type serwisu odstępny tylko z wnętrza klastra, nie dostępny z zewnątrz.
+* NodePort - działa na takie zasadzie jak ClusterIP z tą różnicą, że wystawia się również na zdefiniowanym porcie na każdej z maszyn w obrębie klastra, przez co jest również dostępny z zewnątrz
+* LoadBalancer
+
+## DNS
+
+`service-name.namespace.svc.cluster.local` - schemat nazw dns dla serwisów 
+
+`pod-ip.namespace.pod.cluster.local` - schemat nazw dns dla podów, gdzie z w adresie ip zamieniane są kropki na myślinki
+
+## 
+
