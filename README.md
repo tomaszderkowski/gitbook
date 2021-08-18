@@ -41,3 +41,33 @@ spec:
       port: 5978
 ```
 
+## Przydatne polecenia
+
+`ip a | ip addr | ip link` - pokazuje ustawienia wszystkich interfejsów sięciowych
+
+`route | ip route show | ip route list` - pokazuje tablice routingu na danej maszynie
+
+`ip route add default via <ip_adres>` - dodaje domyślną brame sieciową na podany adres
+
+`ip route add  via <ip_adres>` - dodaje nową brame dla podanej sieci
+
+{% hint style="info" %}
+ip\_forward - domyślnie w systemach linux routing pomiedzy interfejsami sieciowymi jest wyłączony aby włączyć go należy
+{% endhint %}
+
+```text
+$ echo 1 > /proc/sys/net/ipv4/ip_forward #tymczasowe rozwiązanie, działające do restartu maszyny
+
+$ cat /etc/sysctl.conf # pernamętne rozwiązanie
+# Uncomment the line
+net.ipv4.ip_forward=1
+```
+
+`sysctl -a` - pokazuje wszystkie ustawienia sysctl
+
+`sysctl --system` - przeładowywuje ustawienia po zmianie
+
+dig 
+
+nslookup
+
