@@ -71,6 +71,14 @@ dig
 
 nslookup
 
+**`netstat`**  
+  `-t` - pokazuje tylko połączenie TCP  
+  `-u` - pokazuje tylko połącznia UDP  
+  `-l` - pokazuje połączenia w stanie LISTEN  
+  `-n` - pokazuje adresy ip zamiast prubować rozwiązać je na nazyw DNS  
+  `-a` - pokazuje połączenia we wszystkich stanach  
+  `-p` - pokazuje PID i nazwę programu która wystawia dany socket
+
 ## Serwisy
 
 Rodzaje serwisów
